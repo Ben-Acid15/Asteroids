@@ -33,7 +33,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
         screen.fill("black")
-        dt = (Clock.tick() / 1000)
+        dt = (Clock.tick(60) / 1000)
         Clock.tick(60)
         updatable.update(dt)
         for sprite in asteroids:
